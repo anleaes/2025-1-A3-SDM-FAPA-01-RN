@@ -17,6 +17,7 @@ const MovementsCreateScreen = ({ navigation }: Props) => {
     useCallback(() => {
       setName('');
       setDescription('');
+      setYearFoundation('');
     }, [])
   );
 
@@ -66,7 +67,8 @@ const styles = StyleSheet.create({
   container: { 
     flex: 1, 
     padding: 16, 
-    backgroundColor: '#fff' 
+    backgroundColor: '#fff',
+    marginLeft: 250,
   },
   title: { 
     fontSize: 20, 

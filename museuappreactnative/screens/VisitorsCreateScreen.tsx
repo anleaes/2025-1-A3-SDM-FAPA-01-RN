@@ -1,3 +1,6 @@
+// NÃO FUNCIONA
+// Provavelmente algo relacionado ao gênero do usuário
+
 import { DrawerScreenProps } from '@react-navigation/drawer';
 import { useFocusEffect } from 'expo-router';
 import React, { useCallback, useState } from 'react';
@@ -38,7 +41,8 @@ const VisitorsCreateScreen = ({ navigation }: Props) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Novo movimento</Text>
+      <Text style={styles.title}>Novo visitante*</Text>
+      <Text style={styles.title}>NÃO FUNCIONA NO MOMENTO. Provavelmente algo relacionado ao gênero do usuário</Text>
       <Text style={styles.label}>Nome</Text>
       <TextInput
         value={name}

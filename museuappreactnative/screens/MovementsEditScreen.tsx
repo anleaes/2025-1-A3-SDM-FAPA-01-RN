@@ -9,11 +9,13 @@ const MovementsEditScreen = ({ route, navigation }: Props) => {
   const { movement } = route.params;
   const [name, setName] = useState(movement.name);
   const [description, setDescription] = useState(movement.description);
+  const [yearFoundation, setYearFoundation] = useState(movement.yearFoundation);
   const [saving, setSaving] = useState(false);
 
   useEffect(() => {
     setName(movement.name);
     setDescription(movement.description);
+    setYearFoundation(movement.yearFoundation);
   }, [movement]);  
 
   const handleSave = async () => {
@@ -23,7 +25,7 @@ const MovementsEditScreen = ({ route, navigation }: Props) => {
       {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, description }),
+        body: JSON.stringify({ name, description, yearFoundation }),
       }
     );
     navigation.navigate('Movements');        
@@ -45,6 +47,12 @@ const MovementsEditScreen = ({ route, navigation }: Props) => {
         style={[styles.input, { height: 100 }]}
         multiline
       />
+      <Text style={styles.label}>Ano de fundação</Text>
+      <TextInput
+        value={yearFoundation}
+        onChangeText={setYearFoundation}
+        style={styles.input}
+      />
       {saving ? (
         <ActivityIndicator size="large" color="#4B7BE5" />
       ) : (
@@ -60,7 +68,8 @@ const styles = StyleSheet.create({
   container: { 
     flex: 1, 
     padding: 16, 
-    backgroundColor: '#fff' 
+    backgroundColor: '#fff' ,
+    marginLeft: 250,
   },
   label: { 
     fontWeight: 'bold', 

@@ -42,8 +42,9 @@ const MovementsScreen = ({ navigation }: Props) => {
 
   const renderItem = ({ item }: { item: Movement }) => (
     <View style={styles.card}>
-      <Text style={styles.name}>{item.name}</Text>
-      <Text style={styles.description}>{item.description}</Text>
+      <Text style={styles.name}>ID: {item.id}</Text>
+      <Text style={styles.name}>Nome: {item.name}</Text>
+      <Text style={styles.description}>Descrição: {item.description}</Text>
       <Text style={styles.yearFoundation}>{item.yearFoundation}</Text>
       <TouchableOpacity
         style={styles.editButton}
@@ -107,6 +108,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.05,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 4,
+    marginLeft: 250,
   },
   name: {
     fontSize: 18,

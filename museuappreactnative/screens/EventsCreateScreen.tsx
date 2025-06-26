@@ -1,3 +1,6 @@
+// NÃO FUNCIONA
+// Provavelmente algo relacionado aos múltiplos ID's
+
 import { DrawerScreenProps } from '@react-navigation/drawer';
 import { useFocusEffect } from 'expo-router';
 import React, { useCallback, useState } from 'react';

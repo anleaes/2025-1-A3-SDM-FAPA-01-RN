@@ -1,3 +1,6 @@
+// NÃO FUNCIONA
+// Provavelmente algo relacionado aos ID's
+
 import { DrawerScreenProps } from '@react-navigation/drawer';
 import { useFocusEffect } from 'expo-router';
 import React, { useCallback, useState } from 'react';
@@ -38,7 +41,8 @@ const MuseumsCreateScreen = ({ navigation }: Props) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Novo museu</Text>
+      <Text style={styles.title}>Novo museu*</Text>
+      <Text style={styles.title}>NÃO FUNCIONA NO MOMENTO. Provavelmente algo relacionado com os ID's</Text>
       <Text style={styles.label}>Nome</Text>
       <TextInput
         value={name}

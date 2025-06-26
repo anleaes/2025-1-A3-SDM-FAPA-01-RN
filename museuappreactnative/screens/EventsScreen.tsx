@@ -66,7 +66,8 @@ const EventsScreen = ({ navigation }: Props) => {
 
   return ( 
     <View style={styles.container}>
-      <Text style={styles.title}>Eventos</Text>
+      <Text style={styles.title}>Eventos*</Text>
+      <Text style={styles.title}>CRIAR E EDITAR NÃO ESTÃO FUNCIONANDO. Pode ser pelos múltiplos ID's</Text>
       {loading ? (
         <ActivityIndicator size="large" color="#4B7BE5" />
       ) : (

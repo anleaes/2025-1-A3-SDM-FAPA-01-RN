@@ -1,5 +1,5 @@
 // NÃO FUNCIONA
-// Provavelmente algo relacionado aos ID's
+// Provavelmente algo relacionado com a data de fundação do museu
 
 import { DrawerScreenProps } from '@react-navigation/drawer';
 import { useFocusEffect } from 'expo-router';
@@ -42,7 +42,7 @@ const MuseumsCreateScreen = ({ navigation }: Props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Novo museu*</Text>
-      <Text style={styles.title}>NÃO FUNCIONA NO MOMENTO. Provavelmente algo relacionado com os ID's</Text>
+      <Text style={styles.title}>NÃO FUNCIONA NO MOMENTO. Provavelmente algo relacionado com a data de fundação do museu</Text>
       <Text style={styles.label}>Nome</Text>
       <TextInput
         value={name}

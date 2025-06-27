@@ -94,6 +94,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingHorizontal: 16,
     paddingTop: 16,
+    marginLeft: 250,
   },
   title: {
     fontSize: 22,
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.05,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 4,
-    marginLeft: 250,
+    
   },
   name: {
     fontSize: 18,

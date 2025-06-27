@@ -4,6 +4,8 @@ export default function Page() {
   return <DrawerNavigator />;
 }
 
+
+// import React from 'react';
 // import DrawerNavigator from '@/navigation/DrawerNavigator';
 // import { NavigationContainer } from '@react-navigation/native';
 // import { registerRootComponent } from 'expo';
@@ -15,6 +17,8 @@ export default function Page() {
 // );
 
 // registerRootComponent(App);
+
+
 
 // import { Image } from 'expo-image';
 // import { Platform, StyleSheet } from 'react-native';
